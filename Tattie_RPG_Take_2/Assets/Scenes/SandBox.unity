@@ -5136,11 +5136,11 @@ Transform:
   - {fileID: 573005840}
   - {fileID: 1418905725}
   - {fileID: 368564631}
-  - {fileID: 362683782}
   - {fileID: 321741259}
+  - {fileID: 362683782}
+  - {fileID: 510949267}
   - {fileID: 128350486}
   - {fileID: 1496635521}
-  - {fileID: 510949267}
   - {fileID: 419391157}
   - {fileID: 1066082245}
   - {fileID: 500823334}
@@ -8573,11 +8573,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3471151316697675079, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb,
-        type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: 70e595ca18bf5fa4d84452165d351630, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb, type: 3}
 --- !u!4 &3968526231686525717 stripped
