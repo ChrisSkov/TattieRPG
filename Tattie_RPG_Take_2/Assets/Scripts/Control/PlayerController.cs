@@ -19,12 +19,19 @@ namespace RPG.Control
 
         private bool InteractWithCombat()
         {
+            //hit things with a ray and store in an array
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
-
+            
+            //loop through array. can we hit things?
             foreach(RaycastHit hit in hits)
             {
                CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-               if(target == null) continue;
+
+               //if we cannot attack
+               if(!GetComponent<Fighter>().CanAttack(target))
+               {
+                    continue;//continue the loop
+                }
 
                if(Input.GetMouseButtonDown(0))
                {

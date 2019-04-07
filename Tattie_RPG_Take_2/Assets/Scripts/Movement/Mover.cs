@@ -13,7 +13,8 @@ namespace RPG.Movement
 
         NavMeshAgent navMeshAgent;
 
-        private void Start() {
+        private void Start() 
+        {
             navMeshAgent = GetComponent<NavMeshAgent>();
         }
 
