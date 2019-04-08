@@ -111,6 +111,11 @@ PrefabInstance:
       propertyPath: m_Avatar
       value: 
       objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
+    - target: {fileID: 3968526231686525712, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb,
+        type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6156502105454712388, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb,
         type: 3}
       propertyPath: healthPoints
