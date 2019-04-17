@@ -3,19 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 
-namespace  RPG.Cinematics
+namespace RPG.Cinematics
 {
     public class CinematicTrigger : MonoBehaviour
     {
         bool alreadyTriggered = false;
 
-        private void OnTriggerEnter(Collider other) 
+        private void OnTriggerEnter(Collider other)
         {
             if (!alreadyTriggered && other.gameObject.tag == "Player")
             {
                 alreadyTriggered = true;
                 GetComponent<PlayableDirector>().Play();
+
             }
         }
-    }    
+
+        private void Update()
+        {
+            SkipCuteScene();
+        }
+        private void SkipCuteScene()
+        {
+            if (Input.GetKey(KeyCode.G))
+            {
+                GetComponent<PlayableDirector>().Stop();
+            }
+        }
+    }
 }
