@@ -39,6 +39,7 @@ namespace RPG.SceneManagement
             }
 
             DontDestroyOnLoad(gameObject);
+            
             Fader fader = FindObjectOfType<Fader>();
 
 
