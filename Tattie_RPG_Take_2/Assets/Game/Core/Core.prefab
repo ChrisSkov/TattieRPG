@@ -48,7 +48,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b108abd5d48fc584e8ab81227b2398de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  persistentObjectPrefab: {fileID: 0}
+  persistentObjectPrefab: {fileID: 4795974092171471545, guid: e71c3231725b2c84dbe83927b927aae9,
+    type: 3}
 --- !u!1 &1131509358396579598
 GameObject:
   m_ObjectHideFlags: 0
@@ -274,11 +275,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1131509357931264571}
     m_Modifications:
-    - target: {fileID: 1175225887420468217, guid: 0a8c1aff9f62a0b48ba513215ef10a65,
-        type: 3}
-      propertyPath: m_Name
-      value: Follow Camera(Cinemachine)
-      objectReference: {fileID: 0}
     - target: {fileID: 1175225887420468218, guid: 0a8c1aff9f62a0b48ba513215ef10a65,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -334,6 +330,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1175225887420468217, guid: 0a8c1aff9f62a0b48ba513215ef10a65,
+        type: 3}
+      propertyPath: m_Name
+      value: Follow Camera(Cinemachine)
+      objectReference: {fileID: 0}
     - target: {fileID: 1175225887420468219, guid: 0a8c1aff9f62a0b48ba513215ef10a65,
         type: 3}
       propertyPath: m_Follow
@@ -359,11 +360,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1131509357931264571}
     m_Modifications:
-    - target: {fileID: 3382335501490281120, guid: cf68cc7b58101d349bb911c22c785be8,
-        type: 3}
-      propertyPath: m_Name
-      value: Camera
-      objectReference: {fileID: 0}
     - target: {fileID: 3382335501490281123, guid: cf68cc7b58101d349bb911c22c785be8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -418,6 +414,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -0.377
+      objectReference: {fileID: 0}
+    - target: {fileID: 3382335501490281120, guid: cf68cc7b58101d349bb911c22c785be8,
+        type: 3}
+      propertyPath: m_Name
+      value: Camera
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf68cc7b58101d349bb911c22c785be8, type: 3}
