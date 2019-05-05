@@ -705,10 +705,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 5b40ed49-57a4-488a-8e02-7ead1ba31d8b
+  cloudProjectId: 3493d341-9435-495c-a347-768250932040
   framebufferDepthMemorylessMode: 0
-  projectName: Tattie_RPG_Take_2
-  organizationId: stofferdyr
+  projectName: TattieARPG
+  organizationId: tjeam
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
