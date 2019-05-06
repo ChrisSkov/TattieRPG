@@ -1190,6 +1190,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 2356334442439185729}
+    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: b6e1b79b-1210-485d-b911-4429352f0421
+      objectReference: {fileID: 0}
     - target: {fileID: 4472454618967794990, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1199,11 +1204,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 2.77
-      objectReference: {fileID: 0}
-    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: b6e1b79b-1210-485d-b911-4429352f0421
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -1503,15 +1503,15 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: uniqueIdentifier
       value: e851d380-8566-4396-a41d-7ec29be85f53
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -2400,15 +2400,15 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: uniqueIdentifier
       value: 873fff97-e440-45cb-956c-c769aa0d8b50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -2648,6 +2648,11 @@ PrefabInstance:
       propertyPath: waypointTolerance
       value: 3.31
       objectReference: {fileID: 0}
+    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 91115c6a-758a-4d24-bdb6-4f2bcf681b2d
+      objectReference: {fileID: 0}
     - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: healthPoints
@@ -2667,11 +2672,6 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 2.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: 91115c6a-758a-4d24-bdb6-4f2bcf681b2d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -2918,6 +2918,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 3.9594
       objectReference: {fileID: 0}
+    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: ddb357ab-2678-4c7e-8372-08c07e4237b7
+      objectReference: {fileID: 0}
     - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: healthPoints
@@ -2937,11 +2942,6 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 2.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: ddb357ab-2678-4c7e-8372-08c07e4237b7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -3231,15 +3231,15 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: uniqueIdentifier
       value: 3128bf06-3ecb-4997-a9d3-cdc636c8f446
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -4370,15 +4370,15 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: uniqueIdentifier
       value: e4cf39f1-8a77-40ab-9a89-e3398af67350
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -4475,6 +4475,11 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: 73a50343-7233-493a-b701-b92780784373
+      objectReference: {fileID: 0}
     - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: healthPoints
@@ -4494,11 +4499,6 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponDamage
       value: 6.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: uniqueIdentifier
-      value: 73a50343-7233-493a-b701-b92780784373
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -5926,15 +5926,15 @@ PrefabInstance:
       propertyPath: patrolPath
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 92982802294511643, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: uniqueIdentifier
       value: 8fe0b73b-eaac-466c-90e4-330c3cbdb11e
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
