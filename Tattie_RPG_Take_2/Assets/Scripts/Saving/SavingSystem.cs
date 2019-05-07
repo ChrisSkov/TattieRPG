@@ -11,10 +11,10 @@ namespace RPG.Saving
     {
         public void Save(string saveFile)
         {
-            SaveFile(saveFile, CaptureState());
+            Dictionary<string, object> state = LoadFile(saveFile);
+            CaptureState(state);
+            SaveFile(saveFile, state);
         }
-
-
 
         public void Load(string saveFile)
         {
@@ -24,14 +24,16 @@ namespace RPG.Saving
         private Dictionary<string, object> LoadFile(string saveFile)
         {
             string path = GetPathFromSaveFile(saveFile);
-            print("Loading from " + path);
+            if(!File.Exists(path))
+            {
+                return new Dictionary<string, object>();
+            }
             using (FileStream stream = File.Open(path, FileMode.Open))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                return (Dictionary<string, object>) formatter.Deserialize(stream);
+                return (Dictionary<string, object>)formatter.Deserialize(stream);
             }
         }
-
 
         private void SaveFile(string saveFile, object state)
         {
@@ -45,14 +47,12 @@ namespace RPG.Saving
 
         }
 
-        private Dictionary<string, object> CaptureState()
+        private void CaptureState(Dictionary<string, object> state)
         {
-            Dictionary<string, object> state = new Dictionary<string, object>();
             foreach (SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
             {
                 state[saveable.GetUniqueIdentifier()] = saveable.CaptureState();
             }
-            return state;
         }
 
         private void RestoreState(Dictionary<string, object> state)
@@ -60,7 +60,11 @@ namespace RPG.Saving
             Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
             foreach (SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
             {
-                saveable.RestoreState(state[saveable.GetUniqueIdentifier()]);
+                string id = saveable.GetUniqueIdentifier();
+                if(state.ContainsKey(id))
+                {
+                saveable.RestoreState(state[id]);
+                }
             }
         }
 
