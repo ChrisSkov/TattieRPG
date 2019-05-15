@@ -40,7 +40,7 @@ namespace RPG.Saving
                 }
             }
         }
-
+#if UnityEditor
         private void Update()
         {
             if (Application.IsPlaying(gameObject)) return;
@@ -57,7 +57,7 @@ namespace RPG.Saving
 
             globalLookUp[property.stringValue] = this;
         }
-
+#endif
         private bool IsUnique(string candiate)
         {
             if(!globalLookUp.ContainsKey(candiate)) return true;

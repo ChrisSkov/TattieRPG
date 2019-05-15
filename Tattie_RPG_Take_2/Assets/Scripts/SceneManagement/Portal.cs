@@ -35,13 +35,13 @@ namespace RPG.SceneManagement
 
         private IEnumerator Transition()
         {
-            if(sceneToLoad < 0)
+            if (sceneToLoad < 0)
             {
-               yield break;
+                yield break;
             }
 
             DontDestroyOnLoad(gameObject);
-            
+
             Fader fader = FindObjectOfType<Fader>();
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
 
@@ -57,6 +57,8 @@ namespace RPG.SceneManagement
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+
+            savingWrapper.Save();
 
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
@@ -81,8 +83,8 @@ namespace RPG.SceneManagement
         {
             foreach (Portal portal in FindObjectsOfType<Portal>())
             {
-              if(portal == this) continue;
-              if(portal.destination != destination) continue;
+                if (portal == this) continue;
+                if (portal.destination != destination) continue;
 
                 return portal;
             }
