@@ -2316,6 +2316,17 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 5.53
       objectReference: {fileID: 0}
+    - target: {fileID: 5319535636291487809, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb,
+        type: 3}
+      propertyPath: weaponPrefab
+      value: 
+      objectReference: {fileID: 2900842124300915757, guid: 4a11fa13d2f0822409f871bc5bc22e16,
+        type: 3}
+    - target: {fileID: 5319535636291487809, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 7884309116944221015}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3527a9b5ee0e614fbd5e2befcb0a6bb, type: 3}
 --- !u!1 &3222717494158578928 stripped
