@@ -15,7 +15,7 @@ namespace RPG.Movement
 
         NavMeshAgent navMeshAgent;
         Health health;
-        private void Start() 
+        private void Start()
         {
             health = GetComponent<Health>();
             navMeshAgent = GetComponent<NavMeshAgent>();
@@ -24,7 +24,7 @@ namespace RPG.Movement
 
         void Update()
         {
-            
+
             navMeshAgent.enabled = !health.IsDead();
             UpdateAnimator();
         }
@@ -38,8 +38,7 @@ namespace RPG.Movement
 
         public void MoveTo(Vector3 destination, float speedFraction)
         {
-            
-            GetComponent<NavMeshAgent>().destination = destination;
+            navMeshAgent.destination = destination;
             navMeshAgent.speed = maxSpeed * Mathf.Clamp01(speedFraction);
             navMeshAgent.isStopped = false;
         }
@@ -54,8 +53,6 @@ namespace RPG.Movement
             Vector3 velocity = GetComponent<NavMeshAgent>().velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
-            
-
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
@@ -70,7 +67,8 @@ namespace RPG.Movement
             GetComponent<NavMeshAgent>().enabled = false;
             transform.position = position.ToVector();
             GetComponent<NavMeshAgent>().enabled = true;
-            GetComponent<ActionScheduler>().CancelCurrentAction();       }
+            GetComponent<ActionScheduler>().CancelCurrentAction();
         }
+    }
 
 }
