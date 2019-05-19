@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: ArrowProjectileBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 7600975875099069950, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: capsuleHeightDivider
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7954165349762778928, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,10 +72,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7600975875099069950, guid: 03a65b7e9bbd550418c91694790f5355,
+    - target: {fileID: 6444292704185721800, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
-      propertyPath: capsuleHeightDivider
-      value: 1.6
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6444292704185721800, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
