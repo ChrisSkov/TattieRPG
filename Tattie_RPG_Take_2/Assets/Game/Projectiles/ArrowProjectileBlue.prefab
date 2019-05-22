@@ -17,6 +17,11 @@ PrefabInstance:
       propertyPath: capsuleHeightDivider
       value: 1.6
       objectReference: {fileID: 0}
+    - target: {fileID: 7600975875099069950, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: isHoming
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7954165349762778928, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -75,7 +80,7 @@ PrefabInstance:
     - target: {fileID: 6444292704185721800, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.159
       objectReference: {fileID: 0}
     - target: {fileID: 6444292704185721800, guid: 03a65b7e9bbd550418c91694790f5355,
         type: 3}
@@ -111,6 +116,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Parameters.colorGradient.key0.a
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[2].time
+      value: 0.9977691
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
+      value: 0.008097202
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
+      value: 0.5256693
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].time
+      value: 0.06278248
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219356654314589738, guid: 03a65b7e9bbd550418c91694790f5355,
+        type: 3}
+      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[1].value
+      value: 0.8111936
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03a65b7e9bbd550418c91694790f5355, type: 3}
