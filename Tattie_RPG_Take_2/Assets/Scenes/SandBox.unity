@@ -984,7 +984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 324526381}
-  m_LocalRotation: {x: -0.0043960526, y: 0.9941435, z: 0.04440113, w: 0.09842785}
+  m_LocalRotation: {x: -0.004396053, y: 0.9941435, z: 0.04440113, w: 0.09842784}
   m_LocalPosition: {x: 21.857294, y: 42.980583, z: -2.3177528}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2855,11 +2855,6 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: 91115c6a-758a-4d24-bdb6-4f2bcf681b2d
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 30.27
-      objectReference: {fileID: 0}
     - target: {fileID: 6559106631229583380, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: weaponDamage
@@ -2874,6 +2869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 30.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -3125,11 +3125,6 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: ddb357ab-2678-4c7e-8372-08c07e4237b7
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 30.27
-      objectReference: {fileID: 0}
     - target: {fileID: 6559106631229583380, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: weaponDamage
@@ -3144,6 +3139,11 @@ PrefabInstance:
         type: 3}
       propertyPath: timeBetweenAttacks
       value: 2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 30.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
@@ -4682,11 +4682,6 @@ PrefabInstance:
       propertyPath: uniqueIdentifier
       value: 73a50343-7233-493a-b701-b92780784373
       objectReference: {fileID: 0}
-    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
-        type: 3}
-      propertyPath: healthPoints
-      value: 41.3
-      objectReference: {fileID: 0}
     - target: {fileID: 6559106631229583380, guid: b196a246fc02d274fbafcc0f97e0ea43,
         type: 3}
       propertyPath: weaponRange
@@ -4701,6 +4696,11 @@ PrefabInstance:
         type: 3}
       propertyPath: weaponDamage
       value: 6.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5162290428797791761, guid: b196a246fc02d274fbafcc0f97e0ea43,
+        type: 3}
+      propertyPath: healthPoints
+      value: 41.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b196a246fc02d274fbafcc0f97e0ea43, type: 3}
