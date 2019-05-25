@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 548}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 711, y: 498}
   m_MaxSize: {x: 18006, y: 14048}
   vertical: 0
-  controlID: 151
+  controlID: 52
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 291106
+  m_LastSelectedObjectID: 14792
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -698,7 +698,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 96230000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: d2fbffff
       m_RenameOverlay:
@@ -762,19 +762,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Combat
+    - Assets/Game/Characters
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Combat
+  - Assets/Game/Characters
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\stoff\Documents\Repo\Tattie_RPG_Take_2
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 240}
-    m_SelectedIDs: ba2d0000
-    m_LastClickedID: 11706
+    m_SelectedIDs: d02d0000
+    m_LastClickedID: 11728
     m_ExpandedIDs: 000000002e2800003c290000d4290000fa290000fe290000382a0000a02a0000242c0000542c0000ae2c0000923900009439000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0

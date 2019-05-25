@@ -77,6 +77,8 @@
      <Compile Include="Assets\Scripts\SceneManagement\Fader.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\Portal.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\SavingWrapper.cs" />
+     <Compile Include="Assets\Scripts\Stats\BaseStats.cs" />
+     <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
      <Compile Include="Assets\SliderHP.cs" />
      <None Include="Assets\Asset Packs\Animations\README - Usage Rights for these assets 1.txt" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
