@@ -2,6 +2,7 @@
 using UnityEngine;
 using RPG.Core;
 using RPG.Stats;
+using System;
 
 namespace RPG.Resources
 {
@@ -33,15 +34,18 @@ namespace RPG.Resources
 
 
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
 
         }
+
+
 
         public float GetPercentage()
         {
@@ -58,7 +62,14 @@ namespace RPG.Resources
                 GetComponent<ActionScheduler>().CancelCurrentAction();
             }
         }
+        
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+            if (experience == null) return;
 
+            experience.GainExperience(GetComponent<BaseStats>().GetExperienceReward());
+        }
         public object CaptureState()
         {
             return healthPoints;

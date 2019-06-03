@@ -20,6 +20,7 @@ namespace RPG.Combat
             if(Fighter.GetTarget() == null)
             {
                 GetComponent<Text>().text = "N/A";
+                return;
             }
             Health health = Fighter.GetTarget();
 
