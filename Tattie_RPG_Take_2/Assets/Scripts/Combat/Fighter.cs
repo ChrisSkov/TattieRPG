@@ -3,6 +3,8 @@ using RPG.Movement;
 using RPG.Core;
 using System;
 using RPG.Saving;
+using RPG.Resources;
+
 
 namespace RPG.Combat
 {
@@ -12,7 +14,6 @@ namespace RPG.Combat
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] Weapon defaultWeapon = null;
-        [SerializeField] string defaultWeaponName = "Unarmed";
 
         Health target;
         float timeSinceLastAttack = Mathf.Infinity;
@@ -20,7 +21,7 @@ namespace RPG.Combat
 
         private void Start()
         {
-            if (currentWeapon = null)
+            if (currentWeapon == null)
             {
                 EquipWeapon(defaultWeapon);
             }
@@ -127,7 +128,7 @@ namespace RPG.Combat
         public void RestoreState(object state)
         {
             string weaponName = (string)state;
-            Weapon weapon = Resources.Load<Weapon>(defaultWeaponName);
+            Weapon weapon = UnityEngine.Resources.Load<Weapon>(weaponName);
             EquipWeapon(weapon);
         }
     }

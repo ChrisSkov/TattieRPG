@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using RPG.Core;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using RPG.Resources;
+
 public class SliderHP : MonoBehaviour
 {
 
