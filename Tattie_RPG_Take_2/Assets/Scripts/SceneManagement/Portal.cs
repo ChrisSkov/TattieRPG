@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,7 +9,6 @@ namespace RPG.SceneManagement
 {
     public class Portal : MonoBehaviour
     {
-
         enum DestinationIdentifier
         {
             A, B, C, D, E
@@ -21,9 +19,7 @@ namespace RPG.SceneManagement
         [SerializeField] DestinationIdentifier destination;
         [SerializeField] float fadeOutTime = 1f;
         [SerializeField] float fadeInTime = 2f;
-        [SerializeField] float fadeWaitTime = .5f;
-
-
+        [SerializeField] float fadeWaitTime = 0.5f;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -37,6 +33,7 @@ namespace RPG.SceneManagement
         {
             if (sceneToLoad < 0)
             {
+                Debug.LogError("Scene to load not set.");
                 yield break;
             }
 
@@ -44,7 +41,6 @@ namespace RPG.SceneManagement
 
             Fader fader = FindObjectOfType<Fader>();
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
-
 
             yield return fader.FadeOut(fadeOutTime);
 
@@ -54,7 +50,6 @@ namespace RPG.SceneManagement
 
             savingWrapper.Load();
 
-
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
@@ -62,8 +57,6 @@ namespace RPG.SceneManagement
 
             yield return new WaitForSeconds(fadeWaitTime);
             yield return fader.FadeIn(fadeInTime);
-
-
 
             Destroy(gameObject);
         }
@@ -75,8 +68,6 @@ namespace RPG.SceneManagement
             player.transform.position = otherPortal.spawnPoint.position;
             player.transform.rotation = otherPortal.spawnPoint.rotation;
             player.GetComponent<NavMeshAgent>().enabled = true;
-
-
         }
 
         private Portal GetOtherPortal()
@@ -88,6 +79,7 @@ namespace RPG.SceneManagement
 
                 return portal;
             }
+
             return null;
         }
     }

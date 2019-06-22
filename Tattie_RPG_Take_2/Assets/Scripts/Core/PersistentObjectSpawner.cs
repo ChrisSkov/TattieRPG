@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Core
@@ -11,9 +9,9 @@ namespace RPG.Core
 
         static bool hasSpawned = false;
 
-        private void Awake() 
+        private void Awake()
         {
-            if(hasSpawned) return;
+            if (hasSpawned) return;
 
             SpawnPersistentObjects();
 
@@ -26,5 +24,4 @@ namespace RPG.Core
             DontDestroyOnLoad(persistentObject);
         }
     }
-
 }

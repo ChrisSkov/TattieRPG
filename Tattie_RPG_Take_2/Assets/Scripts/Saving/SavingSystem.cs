@@ -20,13 +20,11 @@ namespace RPG.Saving
                 if (buildIndex != SceneManager.GetActiveScene().buildIndex)
                 {
                     yield return SceneManager.LoadSceneAsync(buildIndex);
-
                 }
             }
-
             RestoreState(state);
-
         }
+
         public void Save(string saveFile)
         {
             Dictionary<string, object> state = LoadFile(saveFile);
@@ -62,7 +60,6 @@ namespace RPG.Saving
                 BinaryFormatter formatter = new BinaryFormatter();
                 formatter.Serialize(stream, state);
             }
-
         }
 
         private void CaptureState(Dictionary<string, object> state)
@@ -77,7 +74,6 @@ namespace RPG.Saving
 
         private void RestoreState(Dictionary<string, object> state)
         {
-            Dictionary<string, object> stateDict = (Dictionary<string, object>)state;
             foreach (SaveableEntity saveable in FindObjectsOfType<SaveableEntity>())
             {
                 string id = saveable.GetUniqueIdentifier();

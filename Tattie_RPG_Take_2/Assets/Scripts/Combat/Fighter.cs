@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using RPG.Movement;
 using RPG.Core;
-using System;
 using RPG.Saving;
 using RPG.Resources;
-
 
 namespace RPG.Combat
 {

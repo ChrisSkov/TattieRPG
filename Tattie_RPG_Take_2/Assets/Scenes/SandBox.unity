@@ -6450,6 +6450,11 @@ PrefabInstance:
       propertyPath: defaultWeaponName
       value: EnemyEquippedBow
       objectReference: {fileID: 0}
+    - target: {fileID: 5381526049195931234, guid: 74ba5289df3f43c4eb88886f854047cb,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: f0fc41f2-10bc-4a81-83b5-88e4a39b07f9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74ba5289df3f43c4eb88886f854047cb, type: 3}
 --- !u!4 &1850283565 stripped
@@ -7925,6 +7930,16 @@ PrefabInstance:
     - target: {fileID: 7678837809493603412, guid: 8792e326ba27c0944b7240f2cd3b1601,
         type: 3}
       propertyPath: sceneToLoad
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678837809493603412, guid: 8792e326ba27c0944b7240f2cd3b1601,
+        type: 3}
+      propertyPath: fadeInTime
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678837809493603412, guid: 8792e326ba27c0944b7240f2cd3b1601,
+        type: 3}
+      propertyPath: destination
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
