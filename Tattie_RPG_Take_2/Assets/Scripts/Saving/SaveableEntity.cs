@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using UnityEditor;
-using UnityEngine.AI;
-using RPG.Core;
+﻿using System;
 using System.Collections.Generic;
-using System;
+using RPG.Core;
+using UnityEditor;
+using UnityEngine;
+using UnityEngine.AI;
 
 namespace RPG.Saving
 {
@@ -11,7 +11,7 @@ namespace RPG.Saving
     public class SaveableEntity : MonoBehaviour
     {
         [SerializeField] string uniqueIdentifier = "";
-        static Dictionary<string, SaveableEntity> globalLookUp = new Dictionary<string, SaveableEntity>();
+        static Dictionary<string, SaveableEntity> globalLookup = new Dictionary<string, SaveableEntity>();
 
         public string GetUniqueIdentifier()
         {
@@ -40,7 +40,8 @@ namespace RPG.Saving
                 }
             }
         }
-#if UnityEditor
+
+#if UNITY_EDITOR
         private void Update()
         {
             if (Application.IsPlaying(gameObject)) return;
@@ -55,25 +56,28 @@ namespace RPG.Saving
                 serializedObject.ApplyModifiedProperties();
             }
 
-            globalLookUp[property.stringValue] = this;
+            globalLookup[property.stringValue] = this;
         }
 #endif
-        private bool IsUnique(string candiate)
+
+        private bool IsUnique(string candidate)
         {
-            if(!globalLookUp.ContainsKey(candiate)) return true;
-            if(globalLookUp[candiate] == this) return true;
+            if (!globalLookup.ContainsKey(candidate)) return true;
 
-            if(globalLookUp[candiate] == null)
+            if (globalLookup[candidate] == this) return true;
+
+            if (globalLookup[candidate] == null)
             {
-                globalLookUp.Remove(candiate);
+                globalLookup.Remove(candidate);
                 return true;
             }
 
-            if(globalLookUp[candiate].GetUniqueIdentifier() != candiate)
+            if (globalLookup[candidate].GetUniqueIdentifier() != candidate)
             {
-                globalLookUp.Remove(candiate);
+                globalLookup.Remove(candidate);
                 return true;
             }
+
             return false;
         }
     }
