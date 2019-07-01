@@ -47,17 +47,17 @@ PrefabInstance:
     - target: {fileID: 7359107511747046542, guid: a81b952fae7da6146a72087f04e91765,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 219.20871
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7359107511747046542, guid: a81b952fae7da6146a72087f04e91765,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 192.56265
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7359107511747046542, guid: a81b952fae7da6146a72087f04e91765,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.090084
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7359107511747046542, guid: a81b952fae7da6146a72087f04e91765,
         type: 3}
@@ -118,6 +118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7938517241532618124, guid: 4c9dd4af5025588458681375845c58ce,
+        type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7938517241532618131, guid: 4c9dd4af5025588458681375845c58ce,
         type: 3}

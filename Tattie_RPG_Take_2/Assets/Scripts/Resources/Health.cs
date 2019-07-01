@@ -8,16 +8,19 @@ namespace RPG.Resources
 {
     public class Health : MonoBehaviour, ISaveable
     {
+        float healthPoints = -1f;
         // public Slider slider;
 
 
-        [SerializeField] float healthPoints = 100f;
 
         bool isDead = false;
 
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+            if (healthPoints < 0)
+            {
+                healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+            }
         }
         public float getHealth()
         {
@@ -62,7 +65,7 @@ namespace RPG.Resources
                 GetComponent<ActionScheduler>().CancelCurrentAction();
             }
         }
-        
+
         private void AwardExperience(GameObject instigator)
         {
             Experience experience = instigator.GetComponent<Experience>();
